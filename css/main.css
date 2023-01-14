@@ -83,6 +83,7 @@ a {
   color: #333;
   border-color: #fff;
 }
+
 /* HEADER */
 header {
   width: 100%;
@@ -346,6 +347,190 @@ header .badges .badge {
   bottom: 0;
   left: 275px;
 }
+
 .visual .fade-in {
   opacity: 0;
+}
+
+/* NOTICE */
+.notice .notice-line {
+  position: relative;
+}
+
+.notice .notice-line .bg-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #333;
+}
+
+.notice .notice-line .bg-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #f6f5ef;
+}
+
+.notice .notice-line .inner {
+  height: 62px;
+  display: flex;
+}
+
+.notice .notice-line .inner__left {
+  width: 60%;
+  height: 100%;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+}
+
+.notice .notice-line .inner__left h2 {
+  color: #fff;
+  font-size: 17px;
+  font-weight: 700;
+  margin-right: 20px;
+}
+
+.notice .notice-line .inner__left .swiper {
+  flex-grow: 1; /* 최대한 늘어나게 함 */
+  height: 62px;
+}
+
+.notice .notice-line .inner__left .swiper-slide {
+  height: 62px;
+  display: flex;
+  align-items: center;
+}
+
+.notice .notice-line .inner__left .swiper-slide a {
+  color: #fff;
+}
+
+.notice .notice-line .inner__left .notice-line__more {
+  width: 62px;
+  height: 62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.notice .notice-line .inner__left .material-symbols-outlined {
+  color: #fff;
+  font-size: 30px;
+}
+
+.notice .notice-line .inner__right {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.notice .notice-line .inner__right h2 {
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.notice .notice-line .inner__right .toggle-promotion {
+  width: 62px;
+  height: 62px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.notice .notice-line .inner__right .toggle-promotion .material-symbols-outlined {
+  font-size: 30px;
+}
+
+.notice .promotion {
+  height: 693px;
+  background-color: #f6f5ef;
+  position: relative;
+  transition: height .4s;
+  overflow: hidden;
+}
+.notice .promotion.hide {
+  height: 0;
+}
+.notice .promotion .swiper {
+  width: calc(819px * 3 + 20px);
+  height: 553px;
+  position: absolute;
+  top: 40px;
+  /* 위치기준을 정 가운데로 잡은 뒤(left: 50%) 요소를 절반만큼 땡겨와(margin-left) 중앙을 맞춘다. */
+  left: 50%;
+  margin-left: calc((819px * 3 + 20px) / -2);
+}
+.notice .promotion .swiper-slide {
+  opacity: .5;
+  transition: opacity 1s; /* 전환 속성 opacity 를 1초동안 바꿈 */
+  position: relative;
+}
+.notice .promotion .swiper-slide-active {
+  opacity: 1;
+}
+.notice .promotion .swiper-slide .btn {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+/* swiper.js 의 css 와 연동 */
+/* inline-block 은 inline 요소 => 글자처럼 취급되어 text-align center 로 조절 가능*/
+.notice .promotion .swiper-pagination {
+  bottom: 40px;
+  left: 0;
+  right: 0;
+}
+.notice .promotion .swiper-pagination .swiper-pagination-bullet {
+  background-color: transparent;
+  background-image: url("../images/promotion_slide_pager.png");
+  width: 12px;
+  height: 12px;
+  margin-right: 6px;
+  outline: none; /* 테두리 표시 되지않음 */
+}
+.notice .promotion .swiper-pagination .swiper-pagination-bullet:last-child {
+  margin-right: 0;
+}
+.notice .promotion .swiper-pagination .swiper-pagination-bullet-active {
+  background-image: url("../images/promotion_slide_pager_on.png");
+}
+/* 다중 선택자 */
+.notice .promotion .swiper-prev,
+.notice .promotion .swiper-next {
+  width: 42px;
+  height: 42px;
+  border: 2px solid #333;
+  border-radius: 50%;
+  position: absolute;
+  top: 300px;
+  z-index: 1;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .4s;
+}
+.notice .promotion .swiper-prev {
+  left: 50%;
+  margin-left: -480px;
+}
+.notice .promotion .swiper-next {
+  right: 50%;
+  margin-right: -480px;
+}
+.notice .promotion .swiper-prev:hover,
+.notice .promotion .swiper-next:hover {
+  background-color: #333;
+  color: #fff;
 }
