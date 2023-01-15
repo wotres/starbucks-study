@@ -59,10 +59,11 @@
   />
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <!-- defer: html 구조 해석 후 동작-->
+  <script defer src="./js/youtube.js"></script>
   <script defer src="./js/main.js"></script>
 </head>
 <body>
-<!-- BEN : __ => 요소 일부분 / - 요소 상태 -->
+<!-- BEM : __ => 요소 일부분 / - 요소 상태 -->
 <!-- HEADER -->
 <header>
   <div class="inner">
@@ -465,23 +466,23 @@
     <div class="swiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-          <img src="./images/promotion_slide1.jpg" alt="2023 뉴이어, 스타벅스와 함께 즐겁고 활기차게 시작하세요!" />
+          <img src="./images/promotion_slide1.jpg" alt="2023 뉴이어, 스타벅스와 함께 즐겁고 활기차게 시작하세요!"/>
           <a href="javascript:void(0)" class="btn">자세히 보기</a>
         </div>
         <div class="swiper-slide">
-          <img src="./images/promotion_slide2.jpg" alt="기간 내 스타벅스 카드 e-Gift를 3만원 이상 선물 시, 아메리카노 e-쿠폰을 드립니다." />
+          <img src="./images/promotion_slide2.jpg" alt="기간 내 스타벅스 카드 e-Gift를 3만원 이상 선물 시, 아메리카노 e-쿠폰을 드립니다."/>
           <a href="javascript:void(0)" class="btn">자세히 보기</a>
         </div>
         <div class="swiper-slide">
-          <img src="./images/promotion_slide3.jpg" alt="뉴이어 푸드와 제조 음료를 세트로 구매 시, 뉴이어 음료 BOGO(1+1) 쿠폰을 드립니다." />
+          <img src="./images/promotion_slide3.jpg" alt="뉴이어 푸드와 제조 음료를 세트로 구매 시, 뉴이어 음료 BOGO(1+1) 쿠폰을 드립니다."/>
           <a href="javascript:void(0)" class="btn">자세히 보기</a>
         </div>
         <div class="swiper-slide">
-          <img src="./images/promotion_slide4.jpg" alt="신년 MD 상품 포함 3만원 이상 구매 고객께 아메리카노(톨사이즈) 쿠폰을 드립니다." />
+          <img src="./images/promotion_slide4.jpg" alt="신년 MD 상품 포함 3만원 이상 구매 고객께 아메리카노(톨사이즈) 쿠폰을 드립니다."/>
           <a href="javascript:void(0)" class="btn">자세히 보기</a>
         </div>
         <div class="swiper-slide">
-          <img src="./images/promotion_slide5.jpg" alt="2017 DIGITAL LUCKY DRAW 100% 당첨의 행운을 드립니다!" />
+          <img src="./images/promotion_slide5.jpg" alt="2017 DIGITAL LUCKY DRAW 100% 당첨의 행운을 드립니다!"/>
           <a href="javascript:void(0)" class="btn">자세히 보기</a>
         </div>
       </div>
@@ -499,5 +500,29 @@
     </div>
   </div>
 </section>
+<!--REWARDS-->
+<section class="rewards">
+  <div class="bg-left"></div>
+  <div class="bg-right"></div>
+  <div class="inner">
+    <div class="btn-group">
+      <div class="btn btn--reverse sign-up">회원가입</div>
+      <div class="btn sign-in">로그인</div>
+      <div class="btn gift">e-Gift 선물하기</div>
+    </div>
+  </div>
+</section>
 </body>
 </html>
+<!--YOUTUBE -->
+<section class="youtube">
+  <div class="youtube__area">
+    <div id="player"></div>
+  </div>
+  <div class="youtube__cover"></div>
+  <div class="inner">
+    <img src="./images/floating1.png" alt="Icon" class="floating floating1"/>
+    <img src="./images/floating2.png" alt="Icon" class="floating floating2"/>
+    <img src="./images/floating3.png" alt="Icon" class="floating floating3"/>
+  </div>
+</section>
