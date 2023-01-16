@@ -56,7 +56,7 @@ new Swiper('.promotion .swiper', {
   centeredSlides: true, // 처음 슬라이드가 가운데로
   loop: true,
   autoplay: {
-    delay: 5000
+    delay: 2000
   },
   pagination: {
     el: '.promotion .swiper-pagination', // 페이지 번호 요소 선택자
@@ -65,6 +65,24 @@ new Swiper('.promotion .swiper', {
   navigation: {
     prevEl: '.promotion .swiper-prev',
     nextEl: '.promotion .swiper-next'
+  }
+});
+
+new Swiper('.awards .swiper', {
+  slidesPerView: 5, // 한번에 보여줄 슬라이드 개수
+  spaceBetween: 30, // 슬라이드 사이 여백 30px
+  // centeredSlides: true, // 처음 슬라이드가 가운데로
+  loop: true,
+  autoplay: {
+    delay: 1000
+  },
+  // pagination: {
+  //   el: '.promotion .swiper-pagination', // 페이지 번호 요소 선택자
+  //   clickable: true
+  // },
+  navigation: {
+    prevEl: '.awards .swiper-prev',
+    nextEl: '.awards .swiper-next'
   }
 });
 
